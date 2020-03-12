@@ -219,6 +219,7 @@ message DefaultResourcesConfig {
   //
   // See https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/#resource-requests-and-limits-of-pod-and-container
   ResourcesRequestsConfig requests = 1;
+  ResourcesRequestsConfig limits = 2;
 }
 
 // Configuration for an egress gateway.

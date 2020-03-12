@@ -345,8 +345,10 @@ spec:
               path: /-/ready
               port: 9090
           resources:
+            limits:
+              cpu: 2000m
             requests:
-              cpu: 10m
+              cpu: 200m
             
           volumeMounts:
           - name: config-volume

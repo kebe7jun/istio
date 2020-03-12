@@ -116,8 +116,10 @@ spec:
           successThreshold: 1
           failureThreshold: 5
         resources:
+          limits:
+            cpu: 2000m
           requests:
-            cpu: 10m
+            cpu: 200m
           
       - name: istio-coredns-plugin
         command:
@@ -128,8 +130,10 @@ spec:
           name: dns-grpc
           protocol: TCP
         resources:
+          limits:
+            cpu: 2000m
           requests:
-            cpu: 10m
+            cpu: 200m
           
       dnsPolicy: Default
       volumes:
@@ -586,8 +590,10 @@ spec:
               path: /-/ready
               port: 9090
           resources:
+            limits:
+              cpu: 2000m
             requests:
-              cpu: 10m
+              cpu: 200m
             
           volumeMounts:
           - name: config-volume
@@ -7096,8 +7102,10 @@ spec:
           periodSeconds: 5
         name: citadel
         resources:
+          limits:
+            cpu: 2000m
           requests:
-            cpu: 10m
+            cpu: 200m
         securityContext:
           capabilities:
             drop:
@@ -8756,8 +8764,11 @@ data:
           "enabled": true
         },
         "defaultResources": {
+          "limits": {
+            "cpu": "2000m"
+          },
           "requests": {
-            "cpu": "10m"
+            "cpu": "200m"
           }
         },
         "disablePolicyChecks": true,
@@ -10342,8 +10353,10 @@ spec:
         - containerPort: 15014
         - containerPort: 42422
         resources:
+          limits:
+            cpu: 2000m
           requests:
-            cpu: 10m
+            cpu: 200m
         securityContext:
           capabilities:
             drop:

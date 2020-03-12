@@ -46407,7 +46407,9 @@ spec:
       network: ""
       defaultResources:
         requests:
-          cpu: 10m
+          cpu: 200m
+        limits:
+          cpu: 2000m
       defaultPodDisruptionBudget:
         enabled: true
       priorityClassName: ""

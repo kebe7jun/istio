@@ -404,8 +404,11 @@ data:
           "enabled": true
         },
         "defaultResources": {
+          "limits": {
+            "cpu": "2000m"
+          },
           "requests": {
-            "cpu": "10m"
+            "cpu": "200m"
           }
         },
         "disablePolicyChecks": true,

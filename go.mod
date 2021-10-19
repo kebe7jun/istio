@@ -4,9 +4,6 @@ go 1.16
 
 replace github.com/spf13/viper => github.com/istio/viper v1.3.3-0.20190515210538-2789fed3109c
 
-// Old version had no license
-replace github.com/chzyer/logex => github.com/chzyer/logex v1.1.11-0.20170329064859-445be9e134b2
-
 // Avoid pulling in incompatible libraries
 replace github.com/docker/distribution => github.com/docker/distribution v0.0.0-20191216044856-a8371794149d
 
